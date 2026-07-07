@@ -38,10 +38,11 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center gap-8">
-            <a href="#">Home</a>
+            <a href="/">Home</a>
             <a href="about">About</a>
             <a href="#">Investments</a>
             <a href="#">Plans</a>
+            <a href="/faq">FAQ</a>
             <a href="#">Contact</a>
           </div>
 
@@ -103,10 +104,10 @@ export default function Navbar() {
               </div>
 
               <div className="mt-10 flex flex-col gap-6 text-lg font-medium">
-                <a href="#">Home</a>
+                <a href="/">Home</a>
                 <a href="about">About</a>
                 <a href="#">Investments</a>
-                <a href="#">Plans</a>
+                <a href="/faq">FAQ</a>
                 <a href="#">Contact</a>
 
                 <hr />
