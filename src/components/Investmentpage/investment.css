@@ -1,0 +1,97 @@
+.investment-hero{
+
+max-width:1300px;
+
+margin:120px auto;
+
+padding:0 30px;
+
+position:relative;
+
+}
+
+/* Top */
+
+.investment-top{
+
+max-width:760px;
+
+margin-bottom:60px;
+
+}
+
+.investment-top h1{
+
+font-size:4rem;
+
+font-weight:800;
+
+line-height:1.1;
+
+color:#111827;
+
+margin-bottom:30px;
+
+}
+
+.investment-top p{
+
+font-size:22px;
+
+line-height:1.8;
+
+color:#6b7280;
+
+max-width:650px;
+
+margin-bottom:40px;
+
+}
+
+.investment-btn{
+
+padding:18px 40px;
+
+border:none;
+
+border-radius:50px;
+
+background:#f97316;
+
+color:white;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.investment-btn:hover{
+
+background:#ea580c;
+
+}
+
+/* Image */
+
+.investment-image{
+
+height:55vh;
+
+overflow:hidden;
+
+border-radius:10px;
+
+}
+
+.investment-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}

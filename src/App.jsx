@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Preloader from "./components/Preloader";
 import Aboutpage from "./pages/Aboutpage";
 import Faq from "./pages/Faqpage";
+import Investments from "./pages/Investmentspage";
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
 
         <Route path="/about" element={<Aboutpage/>}/>
         <Route path="/faq" element={<Faq/>}/>
+        <Route path="/investments" element={<Investments/>}/>
 
       </Routes>
     </BrowserRouter>

@@ -43,7 +43,7 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-24 bg-gray-100">
+    <section className="py-10 bg-gray-100">
       <div className="max-w-7xl mx-auto px-6">
 
         <motion.div
@@ -51,17 +51,17 @@ export default function WhyChooseUs() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: .6 }}
-          className="text-center"
+      
         >
-          <span className="bg-orange-100 text-orange-600 px-4 py-2 rounded-full font-semibold">
+          {/* <span className="bg-orange-100 text-orange-600 px-4 py-2 rounded-full font-semibold">
             WHY CHOOSE US
-          </span>
+          </span> */}
 
-          <h2 className="text-4xl lg:text-5xl font-bold mt-6 text-gray-900">
+          <h2 className="text-2xl lg:text-3xl font-bold mt-6 text-gray-900">
             Why Investors Trust PrimeVestHoldings
           </h2>
 
-          <p className="mt-6 text-lg text-gray-500 max-w-3xl mx-auto">
+          <p className="mt-6 text-gray-500 max-w-3xl ">
             We combine technology, transparency, and professional investment
             management to help individuals and businesses build long-term wealth.
           </p>

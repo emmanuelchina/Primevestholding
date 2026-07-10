@@ -47,7 +47,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-28 bg-gray-100">
+    <section className="py-10 bg-gray-100">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
@@ -57,20 +57,20 @@ export default function HowItWorks() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: .6 }}
-          className="text-center"
+      
         >
-          <span className="bg-orange-100 text-orange-600 px-5 py-2 rounded-full font-semibold">
+          {/* <span className="bg-orange-100 text-orange-600 px-5 py-2 rounded-full font-semibold">
             HOW IT WORKS
-          </span>
+          </span> */}
 
-          <h2 className="text-4xl lg:text-5xl font-bold mt-6 text-gray-900">
+          <h2 className="text-2xl lg:text-3xl font-bold mt-6 text-gray-900">
             Start Investing in
-            <span className="text-orange-500">
+            
               {" "}5 Simple Steps
-            </span>
+            
           </h2>
 
-          <p className="mt-6 text-gray-500 max-w-3xl mx-auto text-lg">
+          <p className="mt-6 text-gray-500 max-w-3xl ">
             Joining PrimeVestHoldings is quick and straightforward. Follow these
             simple steps to begin building your investment portfolio.
           </p>

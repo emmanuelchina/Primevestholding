@@ -39,16 +39,16 @@ export default function FAQ() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section className="py-24 bg-gray-100">
+    <section className="py-10 bg-gray-100">
       <div className="max-w-4xl mx-auto px-6">
         {/* Heading */}
 
-        <div className="text-center mb-16">
-          <span className="bg-orange-100 text-orange-600 px-4 py-2 rounded-full font-semibold">
+        <div className=" mb-16">
+          {/* <span className="bg-orange-100 text-orange-600 px-4 py-2 rounded-full font-semibold">
             FAQ
-          </span>
+          </span> */}
 
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mt-6">
+          <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mt-6">
             Frequently Asked Questions
           </h2>
 
