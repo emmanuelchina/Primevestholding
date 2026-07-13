@@ -1,166 +1,161 @@
-import { motion } from "framer-motion";
-import {
-  UserPlus,
-  ShieldCheck,
-  Wallet,
-  TrendingUp,
-  CreditCard,
-} from "lucide-react";
-
 const steps = [
   {
-    id: "01",
-    icon: UserPlus,
+    number: "01",
+    image: "/images/how/account.svg",
     title: "Create an Account",
-    description:
-      "Register in minutes using your email address and create your secure PrimeVestHoldings account.",
+    text: "Sign up securely in just a few minutes with your email address.",
   },
   {
-    id: "02",
-    icon: ShieldCheck,
+    number: "02",
+    image: "/images/how/verify.svg",
     title: "Verify Your Identity",
-    description:
-      "Complete our simple verification process to secure your account and comply with financial regulations.",
+    text: "Complete the verification process to keep your account secure.",
   },
   {
-    id: "03",
-    icon: Wallet,
-    title: "Fund Your Wallet",
-    description:
-      "Deposit funds securely using one of our supported payment methods and prepare to invest.",
+    number: "03",
+    image: "/images/how/plan.svg",
+    title: "Choose a Plan",
+    text: "Select the cryptocurrency investment plan that suits your goals.",
   },
   {
-    id: "04",
-    icon: TrendingUp,
-    title: "Choose an Investment Plan",
-    description:
-      "Select the investment plan that best matches your financial goals and budget.",
+    number: "04",
+    image: "/images/how/deposit.svg",
+    title: "Fund Your Investment",
+    text: "Deposit cryptocurrency securely using your preferred wallet.",
   },
   {
-    id: "05",
-    icon: CreditCard,
-    title: "Track & Withdraw Profits",
-    description:
-      "Monitor your investment performance in real time and withdraw your earnings when eligible.",
+    number: "05",
+    image: "/images/how/growth.svg",
+    title: "Track Your Portfolio",
+    text: "Monitor your investment performance from your dashboard.",
   },
 ];
 
 export default function HowItWorks() {
   return (
-    <section className="py-10 bg-gray-100">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-white py-24">
+      <div className="max-w-7xl mx-auto px-5">
 
         {/* Heading */}
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: .6 }}
-      
-        >
-          {/* <span className="bg-orange-100 text-orange-600 px-5 py-2 rounded-full font-semibold">
-            HOW IT WORKS
-          </span> */}
+        <div className="text-center max-w-3xl mx-auto mb-20">
 
-          <h2 className="text-2xl lg:text-3xl font-bold mt-6 text-gray-900">
-            Start Investing in
-            
-              {" "}5 Simple Steps
-            
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="w-14 h-[3px] bg-orange-500"></div>
+
+            <span className="uppercase tracking-[4px] text-orange-500 text-sm font-semibold">
+              How It Works
+            </span>
+
+            <div className="w-14 h-[3px] bg-orange-500"></div>
+          </div>
+
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
+            Start Investing in Five Simple Steps
           </h2>
 
-          <p className="mt-6 text-gray-500 max-w-3xl ">
-            Joining PrimeVestHoldings is quick and straightforward. Follow these
-            simple steps to begin building your investment portfolio.
+          <p className="mt-6 text-gray-600 text-lg leading-8">
+            Opening an investment account with PrimeVestHoldings is simple,
+            secure, and designed to get you started quickly.
           </p>
-        </motion.div>
-
-        {/* Timeline */}
-
-        <div className="relative mt-24">
-
-          {/* Center Line (Desktop) */}
-          <div className="hidden lg:block absolute left-1/2 top-0 h-full w-1 bg-orange-100 -translate-x-1/2"></div>
-
-          <div className="space-y-14">
-
-            {steps.map((step, index) => {
-              const Icon = step.icon;
-
-              return (
-                <motion.div
-                  key={step.id}
-                  initial={{ opacity: 0, y: 60 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * .15 }}
-                  className={`flex flex-col lg:flex-row items-center gap-8 ${
-                    index % 2 !== 0 ? "lg:flex-row-reverse" : ""
-                  }`}
-                >
-
-                  {/* Card */}
-
-                  <div className="lg:w-1/2">
-                    <div className="bg-gray-50 rounded-3xl p-8 border border-gray-200 hover:border-orange-400 hover:shadow-xl transition duration-300">
-
-                      <div className="flex items-center gap-4">
-
-                        <div className="w-14 h-14 rounded-xl bg-orange-100 flex items-center justify-center">
-                          <Icon className="text-orange-500" size={28} />
-                        </div>
-
-                        <div>
-                          <span className="text-orange-500 font-semibold">
-                            STEP {step.id}
-                          </span>
-
-                          <h3 className="text-2xl font-bold text-gray-900">
-                            {step.title}
-                          </h3>
-                        </div>
-
-                      </div>
-
-                      <p className="text-gray-600 leading-8 mt-6">
-                        {step.description}
-                      </p>
-
-                    </div>
-                  </div>
-
-                  {/* Timeline Circle */}
-
-                  <div className="hidden lg:flex w-16 h-16 rounded-full bg-orange-500 text-white font-bold text-xl items-center justify-center shadow-lg z-10">
-                    {step.id}
-                  </div>
-
-                  {/* Empty Space */}
-
-                  <div className="hidden lg:block lg:w-1/2"></div>
-
-                </motion.div>
-              );
-            })}
-
-          </div>
 
         </div>
 
-        {/* CTA */}
+        {/* Desktop Timeline */}
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: .3 }}
-          className="mt-24 text-center"
-        >
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-10 py-4 rounded-full font-semibold transition duration-300 shadow-lg">
-            Start Investing Today
-          </button>
-        </motion.div>
+        <div className="hidden lg:grid lg:grid-cols-5 gap-8 relative">
+
+          <div className="absolute top-12 left-[10%] right-[10%] h-[3px] bg-orange-200"></div>
+
+          {steps.map((step) => (
+            <div
+              key={step.number}
+              className="relative text-center"
+            >
+
+              {/* Number */}
+
+              <div className="relative z-10 mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-orange-500 text-white font-bold text-lg shadow-lg">
+                {step.number}
+              </div>
+
+              {/* Card */}
+
+              <div className="mt-8 rounded-3xl bg-white p-6 shadow-sm border border-gray-200 hover:border-orange-500 hover:shadow-xl transition-all duration-300">
+
+                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-50 border border-orange-100">
+
+                  <img
+                    src={step.image}
+                    alt={step.title}
+                    className="h-10 w-10 object-contain"
+                  />
+
+                </div>
+
+             <p className="mt-3 font-bold text-gray-900">
+  {step.title}
+</p>
+
+                <p className="mt-3 text-gray-600 leading-7 text-sm">
+                  {step.text}
+                </p>
+
+              </div>
+
+            </div>
+          ))}
+
+        </div>
+
+        {/* Mobile Timeline */}
+
+        <div className="lg:hidden space-y-6">
+
+          {steps.map((step, index) => (
+            <div
+              key={step.number}
+              className="flex gap-5"
+            >
+
+              <div className="flex flex-col items-center">
+
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-500 text-white font-bold">
+                  {step.number}
+                </div>
+
+                {index !== steps.length - 1 && (
+                  <div className="w-[3px] flex-1 bg-orange-300 my-2"></div>
+                )}
+
+              </div>
+
+              <div className="flex-1 rounded-2xl bg-white border border-gray-200 p-5 shadow-sm">
+
+                <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-orange-50 border border-orange-100">
+
+                  <img
+                    src={step.image}
+                    alt={step.title}
+                    className="h-8 w-8 object-contain"
+                  />
+
+                </div>
+
+                <h3 className="mt-4 text-lg font-semibold text-gray-900">
+                  {step.title}
+                </h3>
+
+                <p className="mt-2 text-sm text-gray-600 leading-7">
+                  {step.text}
+                </p>
+
+              </div>
+
+            </div>
+          ))}
+
+        </div>
 
       </div>
     </section>

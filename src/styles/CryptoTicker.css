@@ -1,0 +1,55 @@
+.crypto-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.crypto-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.crypto-slider:hover .crypto-track {
+  animation-play-state: paused;
+}
+
+.crypto-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-right: 70px;
+  flex-shrink: 0;
+}
+
+.crypto-item img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.crypto-item:hover img {
+  transform: scale(1.12);
+}
+
+.crypto-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.crypto-symbol {
+  font-size: 14px;
+  color: #f97316;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

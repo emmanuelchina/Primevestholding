@@ -34,7 +34,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="bg-gray-100 py-20">
+    <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-6 border-2 border-gray-200 rounded-3xl shadow-lg p-10">
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">

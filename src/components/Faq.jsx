@@ -39,7 +39,7 @@ export default function FAQ() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section className="py-10 bg-gray-100">
+    <section className="py-10 bg-white">
       <div className="max-w-4xl mx-auto px-6">
         {/* Heading */}
 

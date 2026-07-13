@@ -1,10 +1,9 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import Stats from "../components/Stats";
+import CompanyStats from "../components/CompanyStats";
 import AboutSection from "../components/About";
 import InvestmentPlans from "../components/Investmeantplans";
-
-
+import CryptoTicker from "../components/CryptoTicker";
 
 import WhyChooseUs from "../components/Whychooseus"
 import HowItWorks from "../components/Howitworks";
@@ -20,14 +19,13 @@ export default function Home() {
      
 
      <Navbar/>
-  
  <Heropage/>
-  
-   
+ <AboutSection/>
+ <CompanyStats/>
         <InvestmentPlans/>
+         <HowItWorks/>
         <WhyChooseUs/>
-        <HowItWorks/>
-        <FAQ/>
+         <CryptoTicker/>
         <CTASection/>
         <Footer/>
        

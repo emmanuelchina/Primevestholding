@@ -1,0 +1,18 @@
+.ticker {
+  width: max-content;
+  animation: scrollTicker 30s linear infinite;
+}
+
+.ticker:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollTicker {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

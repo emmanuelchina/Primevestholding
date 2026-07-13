@@ -1,107 +1,133 @@
-import { motion } from "framer-motion";
-import {
-  ShieldCheck,
-  TrendingUp,
-  Globe2,
-  BriefcaseBusiness,
-  Wallet,
-  BadgeCheck,
-} from "lucide-react";
+import trustImage from "../assets/image/trust.jpg";
 
 const features = [
   {
-    icon: ShieldCheck,
+    image: "/images/why/security.svg",
     title: "Bank-Level Security",
-    text: "Advanced encryption and secure financial practices keep your investments protected.",
+    text: "Advanced encryption and institutional-grade security protect your digital assets and personal information.",
   },
   {
-    icon: TrendingUp,
+    image: "/images/why/growth.svg",
     title: "Consistent Growth",
-    text: "Our investment strategies focus on sustainable long-term returns.",
+    text: "Professionally managed cryptocurrency investment strategies focused on long-term performance.",
   },
   {
-    icon: Globe2,
-    title: "Global Opportunities",
-    text: "Access diversified investment opportunities across different industries.",
+    image: "/images/why/global.svg",
+    title: "Global Access",
+    text: "Invest securely from anywhere in the world through our international crypto investment platform.",
   },
   {
-    icon: BriefcaseBusiness,
+    image: "/images/why/management.svg",
     title: "Professional Management",
-    text: "Experienced investment professionals manage your portfolio responsibly.",
+    text: "Experienced investment professionals monitor every portfolio with discipline and transparency.",
   },
   {
-    icon: Wallet,
+    image: "/images/why/wallet.svg",
     title: "Fast Withdrawals",
-    text: "Enjoy secure and efficient withdrawal processing whenever eligible.",
+    text: "Eligible withdrawals are processed quickly through our secure financial infrastructure.",
   },
   {
-    icon: BadgeCheck,
+    image: "/images/why/transparency.svg",
     title: "Transparent Operations",
-    text: "Clear reporting, real-time updates, and no hidden charges.",
+    text: "Monitor your investment with clear reporting, real-time updates and straightforward communication.",
   },
 ];
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-10 bg-gray-100">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-white py-20">
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: .6 }}
-      
-        >
-          {/* <span className="bg-orange-100 text-orange-600 px-4 py-2 rounded-full font-semibold">
-            WHY CHOOSE US
-          </span> */}
+      <div className="max-w-7xl mx-auto px-5">
 
-          <h2 className="text-2xl lg:text-3xl font-bold mt-6 text-gray-900">
-            Why Investors Trust PrimeVestHoldings
+        {/* Heading */}
+
+        <div className="max-w-3xl mb-16">
+
+          <div className="flex items-center gap-3 mb-4">
+
+            <div className="w-14 h-[3px] bg-orange-500"></div>
+
+            <span className="uppercase tracking-[4px] text-orange-500 text-sm font-semibold">
+              Why Choose PrimeVestHoldings
+            </span>
+
+          </div>
+
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+            A Trusted Cryptocurrency Investment Partner
           </h2>
 
-          <p className="mt-6 text-gray-500 max-w-3xl ">
-            We combine technology, transparency, and professional investment
-            management to help individuals and businesses build long-term wealth.
+          <p className="mt-6 text-base md:text-lg text-gray-600 leading-8">
+            We combine advanced technology, strong security, professional
+            investment management and transparent operations to deliver a
+            reliable cryptocurrency investment experience.
           </p>
-        </motion.div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
-
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-
-            return (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 60 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -8 }}
-                className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-2xl transition border border-gray-100 group"
-              >
-                <div className="w-16 h-16 rounded-2xl bg-orange-100 flex items-center justify-center group-hover:bg-orange-500 transition">
-                  <Icon
-                    size={32}
-                    className="text-orange-500 group-hover:text-white transition"
-                  />
-                </div>
-
-                <h3 className="text-2xl font-bold text-gray-900 mt-6">
-                  {feature.title}
-                </h3>
-
-                <p className="text-gray-500 mt-4 leading-7">
-                  {feature.text}
-                </p>
-              </motion.div>
-            );
-          })}
 
         </div>
+
+        {/* Main Section */}
+
+        <div className="grid lg:grid-cols-2 gap-14 items-center">
+
+          {/* Left Image */}
+
+          <div>
+
+            <img
+              src={trustImage}
+              alt="PrimeVestHoldings"
+              className="w-full h-[280px] md:h-[450px] lg:h-[650px] rounded-3xl object-cover shadow-xl"
+            />
+
+          </div>
+
+          {/* Right Features */}
+
+          <div className="grid gap-5">
+
+            {features.map((feature, index) => (
+
+              <div
+                key={index}
+                className="group flex items-start gap-5 rounded-2xl border border-gray-200 p-5 transition-all duration-300 hover:border-orange-500 hover:shadow-lg"
+              >
+
+                {/* SVG Placeholder */}
+
+                <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl bg-orange-50 border border-orange-100">
+
+                  <img
+                    src={feature.image}
+                    alt={feature.title}
+                    className="h-9 w-9 object-contain"
+                  />
+
+                </div>
+
+                {/* Text */}
+
+                <div>
+
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-900">
+                    {feature.title}
+                  </h3>
+
+                  <p className="mt-2 text-sm md:text-base leading-7 text-gray-600">
+                    {feature.text}
+                  </p>
+
+                </div>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
       </div>
+
     </section>
   );
 }
