@@ -257,17 +257,25 @@ export default function CompanyStats() {
 
       <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-gray-200 blur-[150px] opacity-40"></div>
 
-      <div className="relative max-w-7xl mx-auto px-5">
+      <div className="relative  mx-auto px-5">
 
         {/* Heading */}
 
-        <div className="max-w-2xl mx-auto text-center">
+        <div className=" mx-auto">
 
-          <span className="uppercase tracking-[4px] text-sm font-semibold text-orange-500">
+          {/* <span className="uppercase tracking-[4px] text-sm font-semibold text-orange-500">
             OUR IMPACT
-          </span>
+          </span> */}
+            <div className="flex items-center gap-3 mb-5">
 
-          <h2 className="mt-3 text-3xl md:text-5xl font-bold text-gray-900">
+          <div className="w-14 h-[3px] bg-orange-500"></div>
+
+              <span className="uppercase tracking-widest text-orange-500 font-semibold text-sm">
+                OUR IMPACT
+              </span>
+              </div>
+
+          <h2 className="mt-3 text-2xl md:text-2xl font-bold text-gray-900">
             Trusted Across The World
           </h2>
 

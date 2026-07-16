@@ -47,13 +47,13 @@ export default function WhyChooseUs() {
 
             <div className="w-14 h-[3px] bg-orange-500"></div>
 
-            <span className="uppercase tracking-[4px] text-orange-500 text-sm font-semibold">
+            <span className="uppercase tracking-wider text-orange-500 text-sm font-semibold">
               Why Choose PrimeVestHoldings
             </span>
 
           </div>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-2xl md:text-2xl font-bold text-gray-900 leading-tight">
             A Trusted Cryptocurrency Investment Partner
           </h2>
 

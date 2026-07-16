@@ -46,17 +46,22 @@ export default function InvestmentPlans() {
   return (
     <section className="py-24 bg-white">
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className=" mx-auto px-6">
 
         {/* Heading */}
 
-        <div className="text-center max-w-3xl mx-auto">
+        <div className=" mx-auto">
 
-          <span className="uppercase tracking-[4px] text-orange-500 font-semibold">
-            Investment Plans
-          </span>
+      <div className="flex items-center gap-3 mb-5">
 
-          <h2 className="mt-4 text-4xl md:text-5xl font-bold text-gray-900">
+          <div className="w-14 h-[3px] bg-orange-500"></div>
+
+              <span className="uppercase tracking-widest text-orange-500 font-semibold text-sm">
+                INVESTMENT PLANS
+              </span>
+              </div>
+
+          <h2 className="mt-4 text-2xl md:text-2xl font-bold text-gray-900">
             Choose Your Investment Plan
           </h2>
 

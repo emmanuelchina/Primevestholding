@@ -38,19 +38,18 @@ export default function HowItWorks() {
 
         {/* Heading */}
 
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <div className=" mx-auto mb-20">
 
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-14 h-[3px] bg-orange-500"></div>
+         <div className="flex items-center gap-3 mb-5">
 
-            <span className="uppercase tracking-[4px] text-orange-500 text-sm font-semibold">
-              How It Works
-            </span>
+          <div className="w-14 h-[3px] bg-orange-500"></div>
 
-            <div className="w-14 h-[3px] bg-orange-500"></div>
-          </div>
+              <span className="uppercase tracking-widest text-orange-500 font-semibold text-sm">
+                HOW IT WORKS
+              </span>
+              </div>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
+          <h2 className="text-2xl md:text-2xl font-bold text-gray-900">
             Start Investing in Five Simple Steps
           </h2>
 
